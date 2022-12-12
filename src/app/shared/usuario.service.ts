@@ -7,7 +7,7 @@ import { Usuario } from '../models/usuario';
 })
 export class UsuarioService {
 
-  private url:string = "http://localhost:3000/";
+  private url:string = "https://api-books-production-9466.up.railway.app/";
   public logueado:boolean;
   public usuario:Usuario;
   constructor(private http: HttpClient) { 

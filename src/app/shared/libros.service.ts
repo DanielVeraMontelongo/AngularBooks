@@ -10,7 +10,7 @@ import { UsuarioService } from './usuario.service';
 export class LibrosService {
 
   // private libros: Libro[];
-  private url:string = "http://localhost:3000/libros"
+  private url:string = "https://api-books-production-9466.up.railway.app/libros"
   constructor(private http: HttpClient, private usuarioService:UsuarioService) { 
     // this.libros = [      
     //   new Libro("El señor de los anillos", "Tapa dura", "John Ronald Reuel Tolkien", 50,"https://m.media-amazon.com/images/I/51rETBglWcL.jpg",1,1),
