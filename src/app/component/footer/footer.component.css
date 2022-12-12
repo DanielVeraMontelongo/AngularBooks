@@ -1,0 +1,38 @@
+footer{
+    justify-content: center;
+    align-items: center;
+    background: var(--primary);
+    padding: 40px 0 20px;
+    flex-wrap: wrap;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+}
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+footer ul li a i{
+    font-size: 40px;
+    color: var(--white);
+    transition: 0.2s;
+}
+
+footer ul li a i:hover{
+    cursor: pointer;
+    color: var(--tertiary);
+}
+
+footer p{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    color: var(--tertiary);
+}

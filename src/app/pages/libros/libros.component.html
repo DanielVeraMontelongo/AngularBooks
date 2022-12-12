@@ -1,0 +1,36 @@
+<main>
+
+    <div class="buscador">
+        <input type="number" #id placeholder="ID del libro a buscar">
+        <button type="reset" on-click="buscar(id)">Buscar</button>
+    </div>
+
+    <div class="libros" *ngIf="libros.length > 0; else sinLibros">
+        
+
+        <div class="card" style="width: 18rem; height: 46rem;"  *ngFor="let libro of libros; let par = even;">
+            <img class="card-img-top" src="{{libro.foto}}" style="width: 18rem; height: 26rem;" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{libro.titulo}}</h5>
+            </div>
+            <ul class="list-group ">
+              <li class="list-group-item">Autor: {{libro.autor}}</li>
+              <li class="list-group-item">Tipo: {{libro.tipoLibro}}</li>
+              <li class="list-group-item">Precio: {{libro.precio}}€</li>
+              <li class="list-group-item">{{libro.id_libro | ref}}</li>
+            </ul>
+            <div class="card-body">
+                <button class="btn" [ngClass]="par ? 'boton1': 'boton2'">Comprar</button>
+            </div>
+            <button class="delete--button" on-click="borrar(libro.id_libro)">X</button>
+
+        </div>
+    </div>
+
+    <ng-template #sinLibros>
+        <p>
+            No tienes libros en tu colección
+        </p>
+    </ng-template>
+
+</main>

@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary:#0B3C5D;
+    --secondary: #328CC1;
+    --tertiary:#D9B310;
+    --white:#fff;
+    --black: #1D2731;
+}

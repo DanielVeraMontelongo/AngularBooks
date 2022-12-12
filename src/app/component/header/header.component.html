@@ -1,0 +1,19 @@
+<header>
+    <h2>My Books</h2>
+    <ul *ngIf="usuarioService.logueado==true; else noLog">
+        <li><a routerLink="">Home</a></li>
+        <li><a routerLink="libros">Libros</a></li>
+        <li><a routerLink="addLibro">Añadir Libro</a></li>
+        <li><a routerLink="putLibro">Modificar Libro</a></li>
+        <li><a routerLink="perfil">Perfil</a></li>
+
+    </ul>
+
+    <ng-template #noLog>
+        <ul>
+            <li><a routerLink="">Home</a></li>
+            <li><a routerLink="registro">Registro</a></li>
+            <li><a routerLink="login">Login</a></li>
+        </ul>
+    </ng-template>
+</header>

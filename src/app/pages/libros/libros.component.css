@@ -1,0 +1,100 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 90vh;
+    background: var(--secondary);
+    align-items: center;
+    justify-content: center;
+}
+
+.buscador{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-top: 60px;
+    padding: 20px;
+
+}
+
+.buscador input[type="number"]{
+    width: 200px;
+    padding: 6px;
+    border: none;
+}
+
+.buscador button{
+    width: 200px;
+    border: none;
+    padding: 6px;
+    color: var(--tertiary);
+    background: var(--primary);
+}
+
+.libros{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 50px;
+    align-items: center;
+    padding: 75px 0 100px;
+}
+.card{
+    border: none;
+    box-shadow: 30px 30px 20px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.delete--button{
+    position: absolute;
+    text-align: center;
+    background: var(--black);
+    height: 36px;
+    width: 36px;
+    padding: 4px;
+    border-radius: 50%;
+    border: none;
+    top: 1%;
+    left: 80%;
+    color: var(--tertiary);
+    font-size: larger;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.delete--button:hover{
+    opacity: 1;
+}
+.card-body{
+    height: 14px;
+}
+
+p{
+    font-size: x-large;
+    color: var(--black);
+    text-align: center;
+}
+
+.boton1{
+    background: var(--primary);
+    color: var(--white);
+    width: 100%;
+}
+
+.boton1:hover{
+    background: var(--secondary);
+    color: var(--black);
+}
+
+.boton2{
+    background: var(--black);
+    color: var(--tertiary);
+    width: 100%;   
+}
+
+.boton2:hover{
+    background: var(--tertiary);
+    color: var(--black);
+}
+

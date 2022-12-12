@@ -1,0 +1,28 @@
+<main>
+    <form>
+        <h2>Modificar Libro</h2>
+        <div class="form-group">
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" #titulo placeholder="Título">
+        </div>
+        <div class="form-group">
+            <select class="form-control" #tipo>
+                <option>Tapa dura</option>
+                <option>Tapa blanda</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" #autor placeholder="Autor">
+        </div>
+        <div class="form-group">
+          <input type="number" class="form-control" id="exampleInputPassword1" #precio placeholder="Precio">
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control" id="exampleInputPassword1" #idLibro placeholder="ID del libro">
+          </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="exampleInputPassword1" #foto placeholder="Foto">
+        </div>
+        <button type="reset" on-click="putLibro(titulo.value,tipo.value,autor.value,precio.value,foto.value, idLibro.value)" class="btn">Modificar</button>
+    </form>
+</main>
+
